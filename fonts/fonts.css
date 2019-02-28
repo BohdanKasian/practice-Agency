@@ -1,0 +1,37 @@
+@font-face {
+    font-family: 'Roboto-Bold';
+    src: local('☺'),
+    url('Roboto-Bold/Roboto-Bold.woff') format('woff'),
+    url('Roboto-Bold/Roboto-Bold.woff2') format('woff2'),
+    url('Roboto-Bold/Roboto-Bold.eot') format('eot'),
+    url('Roboto-Bold/Roboto-Bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'ProximaNova-Bold';
+    src: local('☺'),
+    url('ProximaNova-Bold/ProximaNova-Bold.woff') format('woff'),
+    url('ProximaNova-Bold/ProximaNova-Bold.eot') format('eot'),
+    url('ProximaNova-Bold/ProximaNova-Bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'ProximaNova-Light';
+    src: local('☺'),
+    url('ProximaNova-Light/ProximaNova-Light.woff') format('woff'),
+    url('ProximaNova-Light/ProximaNova-Light.eot') format('eot'),
+    url('ProximaNova-Light/ProximaNova-Light.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'ProximaNova-Regular';
+    src: local('☺'),
+    url('ProximaNova-Regular/ProximaNova-Regular.woff') format('woff'),
+    url('ProximaNova-Regular/ProximaNova-Regular.eot') format('eot'),
+    url('ProximaNova-Regular/ProximaNova-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}

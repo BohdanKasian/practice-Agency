@@ -1,0 +1,190 @@
+@import "normalize"
+@import "reset"
+@import "mixin/_mixinFlexWebkit.scss"
+
+$gray: #949494
+$purple: #5d0098
+
+$font-Roboto-Bold: "Roboto-Bold", sans-serif
+$font-PN-Bold: "ProximaNova-Bold", sans-serif
+$font-PN-Light: "ProximaNova-Light", sans-serif
+$font-PN-Regular: "ProximaNova-Regular", sans-serif
+
+.wrapper
+  width: 100%
+  max-width: 1340px
+  margin: 0 auto
+  @media screen and (max-width: 1024px)
+    margin: 0 auto
+    width: 100%
+    padding: 0 10px
+
+.font-style_roboto
+  font-family: $font-Roboto-Bold
+  font-size: 24px
+.font-style_PN-regular
+  font-family: $font-PN-Regular
+  font-size: 18px
+
+.flex
+  @include flexbox
+.flex-wrap
+  @include flexbox
+  @include flex-wrap(wrap)
+
+.button
+  padding: 18px 53px
+  color: white
+  &.purple
+    background-image: linear-gradient(74deg, #49007c 0%, #e70088 100%)
+  &.black
+    background-image: linear-gradient(114deg, #0e0e0e 71%, #e70088 100%)
+
+.button-box
+  width: 205px
+  &.center
+    margin: 0 auto
+
+header
+  background: url("../images/header-bg.png") no-repeat center
+  background-size: cover
+  padding: 52px 0 105px 0
+  .nav-box
+    @include flexbox
+    @include justify-content(space-between)
+    line-height: 24px
+    .logo
+      h1
+        font-family: $font-PN-Bold
+        font-size: 36px
+        color: black
+        span
+          font-family: $font-PN-Light
+    nav
+      ul
+        li
+          margin-right: 35px
+          a
+            color: black
+            &:hover
+              border: 1px solid white
+        li:last-child
+          margin-right: 0
+  .title-box
+    @include flexbox
+    @include flex-direction(column)
+    @include align-items(center)
+    margin-top: 222px
+    padding: 0 0 64px 0
+    h2
+      font-size: 48px
+      line-height: 36px
+    p
+      color: #949494
+      line-height: 30px
+  .toggle-box
+    @include flexbox
+    @include flex-direction(column)
+    @include align-items(center)
+    margin: 436px 0 0 0
+    p
+      font-size: 14px
+      color: white
+      margin: 14px 0 0 0
+
+.code-design
+  @include flexbox
+  .best
+    color: white
+    font-family: $font-PN-Light
+    h3
+      font-size: 48px
+      line-height: 36px
+      font-weight: 300
+      span
+        font-family: $font-PN-Regular
+        font-weight: 700
+    p
+      line-height: 30px
+      font-weight: 300
+      margin: 21px 0 59px 0
+      max-width: 571px
+    &.design
+      background: url("../images/bestdesign-bg.jpg") no-repeat center
+      background-size: cover
+      padding: 150px 90px 0 0
+      max-height: 520px
+      width: 100%
+    &.code
+      background: url("../images/bestcode-bg.jpg") no-repeat center
+      background-size: cover
+      padding: 150px 0 280px 75px
+      max-height: 640px
+      width: 100%
+
+.what-we-do
+  h2
+    font-family: $font-PN-Bold
+    font-size: 48px
+    line-height: 36px
+    text-align: center
+    margin: -20px 0 110px 0
+  .flex-wrap
+    @include justify-content(space-between)
+    .flex
+      max-width: 570px
+      img
+        width: 100%
+        height: auto
+        max-width: 110px
+        max-height: 105px
+      div
+        margin: 0 0 0 47px
+        h3
+          font-family: $font-PN-Bold
+          font-size: 30px
+          line-height: 36px
+          color: black
+        p
+          font-family: $font-PN-Light
+          font-size: 18px
+          color: $gray
+          line-height: 30px
+  .button-box
+    margin: 129px auto 121px auto
+
+.slider-portfolio
+  background-color: gray
+  padding: 50px 0
+
+footer
+  background: url("../images/footer-bg.jpg") no-repeat center
+  background-size: cover
+  text-align: center
+  color: white
+  padding: 120px 0 130px 0
+  p
+    color: $gray
+    line-height: 30px
+  h2
+    font-family: $font-PN-Bold
+    font-size: 48px
+    line-height: 36px
+    margin: 0 0 38px 0
+  >p
+    max-width: 700px
+    margin: 0 auto
+  .flex
+    margin: 132px 0 129px 0
+    @include justify-content(space-around)
+    .team
+      img
+        width: 135px
+        height: 135px
+        border-radius: 50%
+      h4
+        margin: 21px 0 31px 0
+      p
+        max-width: 220px
+
+
