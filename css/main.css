@@ -451,7 +451,8 @@ header {
   display: -webkit-flex;
   display: -moz-flex;
   display: -ms-flexbox;
-  display: flex; }
+  display: flex;
+  margin-bottom: 45px; }
   .code-design .best {
     color: white;
     font-family: "ProximaNova-Light", sans-serif; }
