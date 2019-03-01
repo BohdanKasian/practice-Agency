@@ -379,7 +379,9 @@ header {
     header .nav-box nav ul li {
       margin-right: 35px; }
       header .nav-box nav ul li a {
-        color: black; }
+        color: black;
+        padding: 5px 9px;
+        border: 1px solid transparent; }
         header .nav-box nav ul li a:hover {
           border: 1px solid white; }
     header .nav-box nav ul li:last-child {
