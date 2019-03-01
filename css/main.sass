@@ -1,6 +1,7 @@
 @import "normalize"
 @import "reset"
 @import "mixin/_mixinFlexWebkit.scss"
+@import "mixin/animations"
 
 $gray: #949494
 $purple: #5d0098
@@ -44,6 +45,12 @@ $font-PN-Regular: "ProximaNova-Regular", sans-serif
   width: 205px
   &.center
     margin: 0 auto
+    a
+      position: relative
+      top: 0
+      @include transition(all, .4s, ease)
+      &:hover
+        top: -4px
 
 header
   background: url("../images/header-bg.png") no-repeat center
