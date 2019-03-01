@@ -348,6 +348,8 @@ a:hover, a:active, a:focus {
     background-image: linear-gradient(74deg, #49007c 0%, #e70088 100%); }
   .button.black {
     background-image: linear-gradient(114deg, #0e0e0e 71%, #e70088 100%); }
+    .button.black:hover {
+      background-image: linear-gradient(114deg, #0e0e0e 22%, #e70088 100%); }
 
 .button-box {
   width: 205px; }
