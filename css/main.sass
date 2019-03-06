@@ -1,6 +1,7 @@
 @import "normalize"
 @import "reset"
 @import "mixin/_mixinFlexWebkit.scss"
+@import "mixin/animations"
 
 $gray: #949494
 $purple: #5d0098
@@ -39,11 +40,19 @@ $font-PN-Regular: "ProximaNova-Regular", sans-serif
     background-image: linear-gradient(74deg, #49007c 0%, #e70088 100%)
   &.black
     background-image: linear-gradient(114deg, #0e0e0e 71%, #e70088 100%)
+    &:hover
+      background-image: linear-gradient(114deg, #0e0e0e 22%, #e70088 100%)
 
 .button-box
   width: 205px
   &.center
     margin: 0 auto
+    a
+      position: relative
+      top: 0
+      @include transition(all, .4s, ease)
+      &:hover
+        top: -4px
 
 header
   background: url("../images/header-bg.png") no-repeat center
@@ -66,6 +75,8 @@ header
           margin-right: 35px
           a
             color: black
+            padding: 5px 9px
+            border: 1px solid transparent
             &:hover
               border: 1px solid white
         li:last-child
@@ -94,6 +105,7 @@ header
 
 .code-design
   @include flexbox
+  margin-bottom: 45px
   .best
     color: white
     font-family: $font-PN-Light
@@ -112,7 +124,7 @@ header
     &.design
       background: url("../images/bestdesign-bg.jpg") no-repeat center
       background-size: cover
-      padding: 150px 90px 0 0
+      padding: 150px 90px 0 75px
       max-height: 520px
       width: 100%
     &.code
@@ -131,6 +143,7 @@ header
     margin: -20px 0 110px 0
   .flex-wrap
     @include justify-content(space-between)
+    padding: 0 20px
     .flex
       max-width: 570px
       img
